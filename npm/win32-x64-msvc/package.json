@@ -1,6 +1,6 @@
 {
   "name": "@toondepauw/node-zstd-win32-x64-msvc",
-  "version": "1.1.0-rc.0",
+  "version": "1.1.0",
   "os": [
     "win32"
   ],
