@@ -71,13 +71,94 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@toondepauw/node-zstd-darwin-arm64@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@toondepauw/node-zstd-darwin-arm64@npm:1.1.0"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@toondepauw/node-zstd-darwin-x64@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@toondepauw/node-zstd-darwin-x64@npm:1.1.0"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@toondepauw/node-zstd-freebsd-x64@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@toondepauw/node-zstd-freebsd-x64@npm:1.1.0"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@toondepauw/node-zstd-linux-arm64-gnu@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@toondepauw/node-zstd-linux-arm64-gnu@npm:1.1.0"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@toondepauw/node-zstd-linux-arm64-musl@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@toondepauw/node-zstd-linux-arm64-musl@npm:1.1.0"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@toondepauw/node-zstd-linux-x64-gnu@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@toondepauw/node-zstd-linux-x64-gnu@npm:1.1.0"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@toondepauw/node-zstd-linux-x64-musl@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@toondepauw/node-zstd-linux-x64-musl@npm:1.1.0"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@toondepauw/node-zstd-win32-x64-msvc@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@toondepauw/node-zstd-win32-x64-msvc@npm:1.1.0"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
 "@toondepauw/node-zstd@workspace:.":
   version: 0.0.0-use.local
   resolution: "@toondepauw/node-zstd@workspace:."
   dependencies:
     "@napi-rs/cli": ^2.16.2
+    "@toondepauw/node-zstd-darwin-arm64": 1.1.0
+    "@toondepauw/node-zstd-darwin-x64": 1.1.0
+    "@toondepauw/node-zstd-freebsd-x64": 1.1.0
+    "@toondepauw/node-zstd-linux-arm64-gnu": 1.1.0
+    "@toondepauw/node-zstd-linux-arm64-musl": 1.1.0
+    "@toondepauw/node-zstd-linux-x64-gnu": 1.1.0
+    "@toondepauw/node-zstd-linux-x64-musl": 1.1.0
+    "@toondepauw/node-zstd-win32-x64-msvc": 1.1.0
     "@types/node": ^20.4.9
     ava: ^5.1.1
+  dependenciesMeta:
+    "@toondepauw/node-zstd-darwin-arm64":
+      optional: true
+    "@toondepauw/node-zstd-darwin-x64":
+      optional: true
+    "@toondepauw/node-zstd-freebsd-x64":
+      optional: true
+    "@toondepauw/node-zstd-linux-arm64-gnu":
+      optional: true
+    "@toondepauw/node-zstd-linux-arm64-musl":
+      optional: true
+    "@toondepauw/node-zstd-linux-x64-gnu":
+      optional: true
+    "@toondepauw/node-zstd-linux-x64-musl":
+      optional: true
+    "@toondepauw/node-zstd-win32-x64-msvc":
+      optional: true
   languageName: unknown
   linkType: soft
 

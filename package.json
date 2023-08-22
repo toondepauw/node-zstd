@@ -25,7 +25,7 @@
     "timeout": "3m"
   },
   "engines": {
-    "node": ">= 10"
+    "node": ">= 14"
   },
   "scripts": {
     "artifacts": "napi artifacts",
@@ -37,6 +37,33 @@
     "version": "napi version"
   },
   "packageManager": "yarn@3.6.1",
-  "repository": "https://github.com/toondepauw/node-zstd",
-  "description": "Node.js addon for native Zstandard encoding and decoding with support for dictionaries."
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toondepauw/node-zstd.git"
+  },
+  "description": "Node.js addon for native Zstandard encoding and decoding with support for dictionaries.",
+  "keywords": [
+    "zstandard",
+    "zstd",
+    "compression",
+    "decompression",
+    "encoding",
+    "decoding",
+    "node",
+    "nodejs",
+    "node-addon",
+    "node-api",
+    "napi-rs",
+    "rust"
+  ],
+  "optionalDependencies": {
+    "@toondepauw/node-zstd-darwin-arm64": "1.1.0",
+    "@toondepauw/node-zstd-darwin-x64": "1.1.0",
+    "@toondepauw/node-zstd-freebsd-x64": "1.1.0",
+    "@toondepauw/node-zstd-linux-arm64-gnu": "1.1.0",
+    "@toondepauw/node-zstd-linux-arm64-musl": "1.1.0",
+    "@toondepauw/node-zstd-linux-x64-gnu": "1.1.0",
+    "@toondepauw/node-zstd-linux-x64-musl": "1.1.0",
+    "@toondepauw/node-zstd-win32-x64-msvc": "1.1.0"
+  }
 }
