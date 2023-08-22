@@ -2,6 +2,7 @@
 
 ![CI workflow](https://github.com/toondepauw/node-zstd/actions/workflows/CI.yml/badge.svg)
 [![latest-release](https://badgen.net/github/release/toondepauw/node-zstd)](https://github.com/toondepauw/node-zstd)
+[![Zstandard](https://badgen.net/static/Zstandard/v1.5.5)](https://github.com/facebook/zstd/releases/tag/v1.5.5)
 [![license](https://badgen.net/github/license/toondepauw/node-zstd)](https://github.com/toondepauw/node-zstd/blob/main/LICENCE.md)
 
 Node.js addon for native [Zstandard](http://facebook.github.io/zstd/) encoding and decoding with support for dictionaries.
