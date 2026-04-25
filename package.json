@@ -34,7 +34,7 @@
     "prepublishOnly": "napi prepublish -t npm",
     "test": "ava",
     "universal": "napi universalize",
-    "version": "napi version"
+    "version": "napi version && git add npm/"
   },
   "packageManager": "yarn@3.6.1",
   "repository": {
