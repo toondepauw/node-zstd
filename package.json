@@ -4,28 +4,28 @@
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
-    "name": "node-zstd",
-    "triples": {
-      "additional": [
-        "aarch64-apple-darwin",
-        "aarch64-unknown-linux-gnu",
-        "aarch64-unknown-linux-musl",
-        "x86_64-unknown-freebsd",
-        "x86_64-unknown-linux-musl"
-      ]
-    }
+    "binaryName": "node-zstd",
+    "targets": [
+      "x86_64-apple-darwin",
+      "x86_64-pc-windows-msvc",
+      "x86_64-unknown-linux-gnu",
+      "aarch64-apple-darwin",
+      "aarch64-unknown-linux-gnu",
+      "aarch64-unknown-linux-musl",
+      "x86_64-unknown-linux-musl"
+    ]
   },
   "license": "MIT",
   "devDependencies": {
-    "@napi-rs/cli": "^2.16.2",
+    "@napi-rs/cli": "^3.5.0",
     "@types/node": "^20.4.9",
-    "ava": "^5.1.1"
+    "ava": "^7.0.0"
   },
   "ava": {
     "timeout": "3m"
   },
   "engines": {
-    "node": ">= 14"
+    "node": ">= 20"
   },
   "scripts": {
     "artifacts": "napi artifacts",
@@ -33,7 +33,7 @@
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
     "test": "ava",
-    "universal": "napi universal",
+    "universal": "napi universalize",
     "version": "napi version"
   },
   "packageManager": "yarn@3.6.1",
@@ -59,7 +59,6 @@
   "optionalDependencies": {
     "@toondepauw/node-zstd-darwin-arm64": "1.1.0",
     "@toondepauw/node-zstd-darwin-x64": "1.1.0",
-    "@toondepauw/node-zstd-freebsd-x64": "1.1.0",
     "@toondepauw/node-zstd-linux-arm64-gnu": "1.1.0",
     "@toondepauw/node-zstd-linux-arm64-musl": "1.1.0",
     "@toondepauw/node-zstd-linux-x64-gnu": "1.1.0",

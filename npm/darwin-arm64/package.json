@@ -14,7 +14,7 @@
   "description": "Node.js addon for native Zstandard encoding and decoding with support for dictionaries.",
   "license": "MIT",
   "engines": {
-    "node": ">= 14"
+    "node": ">= 20"
   },
   "repository": "https://github.com/toondepauw/node-zstd"
 }

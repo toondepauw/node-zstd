@@ -4,6 +4,7 @@ use napi::{
   bindgen_prelude::{AsyncTask, Buffer},
   Env, Result, Task,
 };
+use napi_derive::napi;
 use std::io::Write;
 use std::sync::Arc;
 use zstd::dict::EncoderDictionary;
@@ -67,7 +68,7 @@ impl Task for EncodeTask {
     Ok(Buffer::from(output))
   }
 
-  fn finally(&mut self, _env: Env) -> Result<()> {
+  fn finally(self, _env: Env) -> Result<()> {
     Ok(())
   }
 }

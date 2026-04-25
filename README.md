@@ -2,7 +2,7 @@
 
 ![CI workflow](https://github.com/toondepauw/node-zstd/actions/workflows/CI.yml/badge.svg)
 [![latest-release](https://badgen.net/github/release/toondepauw/node-zstd)](https://github.com/toondepauw/node-zstd)
-[![Zstandard](https://badgen.net/static/Zstandard/v1.5.5)](https://github.com/facebook/zstd/releases/tag/v1.5.5)
+[![Zstandard](https://badgen.net/static/Zstandard/v1.5.7)](https://github.com/facebook/zstd/releases/tag/v1.5.7)
 [![license](https://badgen.net/github/license/toondepauw/node-zstd)](https://github.com/toondepauw/node-zstd/blob/main/LICENCE.md)
 
 Node.js addon for native [Zstandard](http://facebook.github.io/zstd/) encoding and decoding with support for dictionaries.
@@ -32,16 +32,15 @@ yarn add @toondepauw/node-zstd
 
 ## Support matrix
 
-|                  | node14 | node16 | node18 | node20 |
-| ---------------- | ------ | ------ | ------ | ------ |
-| Linux arm64 gnu  | ✓      | ✓      | ✓      | ✓      |
-| Linux arm64 musl | ✓      | ✓      | ✓      | ✓      |
-| Linux x64 gnu    | ✓      | ✓      | ✓      | ✓      |
-| Linux x64 musl   | ✓      | ✓      | ✓      | ✓      |
-| macOS arm64      | ✓      | ✓      | ✓      | ✓      |
-| macOS x64        | ✓      | ✓      | ✓      | ✓      |
-| Windows x64      | ✓      | ✓      | ✓      | ✓      |
-| FreeBSD x64      | ✓      | ✓      | ✓      | ✓      |
+|                  | node20 | node22 | node24 |
+| ---------------- | ------ | ------ | ------ |
+| Linux arm64 gnu  | ✓      | ✓      | ✓      |
+| Linux arm64 musl | ✓      | ✓      | ✓      |
+| Linux x64 gnu    | ✓      | ✓      | ✓      |
+| Linux x64 musl   | ✓      | ✓      | ✓      |
+| macOS arm64      | ✓      | ✓      | ✓      |
+| macOS x64        | ✓      | ✓      | ✓      |
+| Windows x64      | ✓      | ✓      | ✓      |
 
 ## API
 
